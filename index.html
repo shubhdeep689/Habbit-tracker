@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masturbation Reduction Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="progress.html">Progress</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Masturbation Reduction Tracker</h1>
+    <p>Total Sessions: <span id="count">0</span></p>
+    <p>Longest No-Masturbation Streak: <span id="streak">0</span> days</p>
+    <p>Current No-Masturbation Streak: <span id="currentStreak">0</span> days</p>
+    <button id="resetButton">Reset Data</button>
+    <div id="calendar"></div>
+    <h2>Progress Chart</h2>
+    <canvas id="habitChart"></canvas>
+    <h2>Reduction Progress</h2>
+    <div class="progress-bar-container">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+    <h2>Weekly & Monthly Stats</h2>
+    <p>This Week: <span id="weeklyCount">0</span> times</p>
+    <p>This Month: <span id="monthlyCount">0</span> times</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
